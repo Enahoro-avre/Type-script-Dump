@@ -1,0 +1,81 @@
+"use strict";
+// // class Department {
+// //     public name: string;
+// //     private readonly age: number
+// //     private employees: string[] = []
+// //     constructor(n: string , n1: number ) {
+// //         this.name = n;
+// //         this.age = n1
+// // }
+// //     describe(this: Department) {
+// //         console.log('Department: ' + this.name +  " and " + this.age , this.employees);
+// // }
+// //     addEmployees(employee: string) {
+// //         this.employees.push(employee);
+// // }
+// //     printEmployeeInformation() {
+// //         console.log('Length of employees: ' + this.employees.length);
+// //         console.log('Name of employess: ' + this.employees);
+// // }
+// //     }
+// // const accounting = new Department('Accounting' , 21 );
+// // accounting.describe();
+// // accounting.addEmployees('Stacy')
+// // accounting.addEmployees('Durber')
+// // accounting.printEmployeeInformation()
+// // accounting
+// // // accounting.employees[2] = 'Anna'; // This won't work because its a private class
+// // accounting.printEmployeeInformation()
+// // // const accountingCopy = { name: 'DUMMY', age: 32 ,  describe: accounting.describe };
+// // // accountingCopy.describe();
+// // Inheritance
+// class Department {
+//     private employees: string[] = []
+//     constructor(public name: string , private readonly age: number ) {
+// }
+//     describe(this: Department) {
+//         console.log('Department: ' + this.name +  " and " + this.age , this.employees);
+// }
+//     addEmployees(employee: string) {
+//         this.employees.push(employee);
+// }
+//     printEmployeeInformation() {
+//         console.log('Length of employees: ' + this.employees.length);
+//         console.log('Name of employess: ' + this.employees);
+// }
+//     }
+// const accounting = new Department('Accounting' , 21 );
+// // accounting.describe();
+// // accounting.addEmployees('Stacy')
+// // accounting.addEmployees('Durber')
+// // accounting.printEmployeeInformation()
+// // accounting
+// // accounting.employees[2] = 'Anna'; // This won't work because its a private class
+// accounting.printEmployeeInformation()
+// class IT extends Department {
+//     admins: string[]
+//     constructor(name: string , admins: string[]) {
+//         super(name, 26)
+//         this.admins = admins
+//     }
+// }
+// class AccountingDepartment extends Department {
+//     constructor(name: string , private reports: string[]) {
+//         super(name , 67)
+//     }
+//     addReport(text: string) {
+//         this.reports.push(text)
+//     }
+//     printReport() {
+//         console.log(this.reports)
+//     }
+// }
+// const it = new IT('cheryl', ['jigunu'])
+// it.addEmployees('loren tanner')
+// it.printEmployeeInformation()
+// console.log(it)
+// const account = new AccountingDepartment('george', ['morgan']) 
+// account.addEmployees('steve')
+// account.addReport('The case between jackson and kindness has being settled ')
+// account.printEmployeeInformation()
+// console.log(account)
